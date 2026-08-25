@@ -1,7 +1,15 @@
 function Navbar() {
   return (
-    <nav>
-      <h2>📚 VidyaPath</h2>
+    <nav
+      style={{
+        backgroundColor: "#2563eb",
+        color: "white",
+        padding: "15px 30px",
+        fontSize: "24px",
+        fontWeight: "bold",
+      }}
+    >
+      📚 VidyaPath
     </nav>
   );
 }
