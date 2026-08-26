@@ -1,4 +1,7 @@
-import Footer from "../components/Footer";
+import {
+  schoolCategories,
+  diplomaCategories,
+} from "../data/categories";import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import CategoryCard from "../components/CategoryCard";
@@ -23,12 +26,9 @@ function Home() {
 >
   📖 School Education
 </h2>
-
-      <CategoryCard title="Class 9" />
-      <CategoryCard title="Class 10" />
-      <CategoryCard title="Class 11" />
-      <CategoryCard title="Class 12" />
-
+{schoolCategories.map((item, index) => (
+  <CategoryCard key={index} title={item} />
+))}
       <h2
   style={{
     color: "#2563eb",
@@ -39,9 +39,9 @@ function Home() {
   🎓 Diploma Education
 </h2>
 
-      <CategoryCard title="Diploma 1st Year" />
-      <CategoryCard title="Diploma 2nd Year" />
-      <CategoryCard title="Diploma 3rd Year" />
+  {diplomaCategories.map((item, index) => (
+  <CategoryCard key={index} title={item} />
+))} 
       <Footer />
     </div>
   );
