@@ -1,3 +1,4 @@
+import { theme } from "../styles/theme";
 import { SITE_NAME, TAGLINE } from "../utils/constants";
 function Hero() {
   return (
@@ -10,10 +11,10 @@ function Hero() {
       <h1
         style={{
           fontSize: "48px",
-          color: "#2563eb",
+          color: theme.primary,
         }}
       >
-        📚 VidyaPath
+        📚 {SITE_NAME}
       </h1>
 
       <p
@@ -22,7 +23,7 @@ function Hero() {
           marginTop: "10px",
         }}
       >
-        Har Student Ki Safalta Ka Raasta
+        {TAGLINE}
       </p>
     </div>
   );

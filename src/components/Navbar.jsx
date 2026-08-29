@@ -1,16 +1,17 @@
+import { theme } from "../styles/theme";
 import { SITE_NAME } from "../utils/constants";
 function Navbar() {
   return (
     <nav
       style={{
-        backgroundColor: "#2563eb",
+        backgroundColor: theme.primary,
         color: "white",
         padding: "15px 30px",
         fontSize: "24px",
         fontWeight: "bold",
       }}
     >
-      📚 VidyaPath
+      {SITE_NAME}
     </nav>
   );
 }

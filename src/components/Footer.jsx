@@ -1,9 +1,10 @@
+import { theme } from "../styles/theme";
 import { COPYRIGHT_TEXT } from "../utils/constants";
 function Footer() {
   return (
     <footer
       style={{
-        backgroundColor: "#2563eb",
+        backgroundColor: theme.primary,
         color: "white",
         textAlign: "center",
         padding: "15px",
