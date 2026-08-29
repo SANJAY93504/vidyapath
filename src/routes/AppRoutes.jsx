@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import MainLayout from "../layouts/MainLayout";
 
 import Home from "../pages/Home";
 import ClassPage from "../pages/ClassPage";
@@ -10,7 +11,14 @@ import Contact from "../pages/Contact";
 function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route
+  path="/"
+  element={
+    <MainLayout>
+      <Home />
+    </MainLayout>
+  }
+/>
       <Route path="/class" element={<ClassPage />} />
       <Route path="/subject" element={<SubjectPage />} />
       <Route path="/chapter" element={<ChapterPage />} />

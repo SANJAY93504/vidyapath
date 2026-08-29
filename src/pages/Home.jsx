@@ -1,8 +1,7 @@
 import {
   schoolCategories,
   diplomaCategories,
-} from "../data/categories";import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+} from "../data/categories";
 import Hero from "../components/Hero";
 import CategoryCard from "../components/CategoryCard";
 
@@ -14,7 +13,6 @@ function Home() {
         padding: "20px",
       }}
     >
-      <Navbar />
       <Hero />
 
     <h2
@@ -42,7 +40,6 @@ function Home() {
   {diplomaCategories.map((item, index) => (
   <CategoryCard key={index} title={item} />
 ))} 
-      <Footer />
     </div>
   );
 }
