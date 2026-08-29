@@ -1,3 +1,4 @@
+import { COPYRIGHT_TEXT } from "../utils/constants";
 function Footer() {
   return (
     <footer
@@ -9,7 +10,7 @@ function Footer() {
         marginTop: "40px",
       }}
     >
-      © 2026 VidyaPath | Har Student Ki Safalta Ka Raasta
+      {COPYRIGHT_TEXT}
     </footer>
   );
 }

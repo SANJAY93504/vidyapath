@@ -1,3 +1,4 @@
+import { SITE_NAME, TAGLINE } from "../utils/constants";
 function Hero() {
   return (
     <div

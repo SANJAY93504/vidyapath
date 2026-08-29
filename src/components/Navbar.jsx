@@ -1,3 +1,4 @@
+import { SITE_NAME } from "../utils/constants";
 function Navbar() {
   return (
     <nav
